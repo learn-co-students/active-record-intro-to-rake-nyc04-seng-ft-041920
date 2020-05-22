@@ -99,8 +99,7 @@ So handy!
 
 It is possible to namespace your Rake tasks. What does "namespace" mean? A
 namespace is really just a way to group or contain something, in this case our
-Rake tasks. So, we might namespace a series of greeting Rake tasks, like
-`hello` above, under the `greeting` heading.
+Rake tasks. So, we might namespace a series of greeting Rake tasks, like `hello` above, under the `greeting` heading.
 
 Let's take a look at namespacing now. Let's say we create another greeting-type
 Rake task, `hola`:
@@ -149,8 +148,7 @@ One common pattern you'll soon become familiar with is the pattern of writing
 code that creates database tables and then "migrating" that code using a rake
 task.
 
-Our `Student` class currently has a `#create_table` method, so let's use that
-method to build out our own `migrate` Rake task.
+Our `Student` class currently has a `#create_table` method, so let's use that method to build out our own `migrate` Rake task.
 
 We'll namespace this task under the `db` heading. This namespace will contain a
 few common database-related tasks.
