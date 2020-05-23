@@ -1,10 +1,9 @@
 require 'pry'
+#require 'sinatra/activerecord/rake'
 
 task :environment do 
   require_relative './config/environment'
 end
-
-
 
 desc 'outputs hello to the terminal'
   namespace :greeting do
@@ -26,7 +25,6 @@ desc 'drop into the Pry console'
 namespace :db do
   desc 'migrate changes to your database'
   task :migrate => :environment do
-   
   end
 end
 
@@ -36,3 +34,9 @@ namespace :db do
    require_relative './db/seeds.rb'
   end
 end
+
+# desc "start our app console"
+# task :console do
+#   ActiveRecord ::Base.logger = Logger.new(STDOUT)
+#   Pry.start
+# end
